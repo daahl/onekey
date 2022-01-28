@@ -1,0 +1,324 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U1
+U 1 1 61E261EB
+P 4500 1950
+F 0 "U1" H 3971 1996 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 3971 1905 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 4500 1950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 4500 1950 50  0001 C CNN
+	1    4500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 61E26C15
+P 6500 2050
+F 0 "J1" H 6270 1947 50  0000 R CNN
+F 1 "USB_B_Micro" H 6270 2038 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 6650 2000 50  0001 C CNN
+F 3 "~" H 6650 2000 50  0001 C CNN
+	1    6500 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small 68ohm1
+U 1 1 61E2D65F
+P 5800 1950
+F 0 "68ohm1" V 5604 1950 50  0000 C CNN
+F 1 "R_Small" V 5695 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 1950 50  0001 C CNN
+F 3 "~" H 5800 1950 50  0001 C CNN
+	1    5800 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small 68ohm2
+U 1 1 61E2D938
+P 5800 2050
+F 0 "68ohm2" V 5600 2050 50  0000 C CNN
+F 1 "R_Small" V 5700 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 2050 50  0001 C CNN
+F 3 "~" H 5800 2050 50  0001 C CNN
+	1    5800 2050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5900 2050 6200 2050
+Wire Wire Line
+	5900 1950 6050 1950
+$Comp
+L power:GND #PWR0101
+U 1 1 61E31B6F
+P 4500 2550
+F 0 "#PWR0101" H 4500 2300 50  0001 C CNN
+F 1 "GND" H 4505 2377 50  0000 C CNN
+F 2 "" H 4500 2550 50  0001 C CNN
+F 3 "" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61E31D91
+P 6500 1650
+F 0 "#PWR0102" H 6500 1400 50  0001 C CNN
+F 1 "GND" H 6505 1477 50  0000 C CNN
+F 2 "" H 6500 1650 50  0001 C CNN
+F 3 "" H 6500 1650 50  0001 C CNN
+	1    6500 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 61E32107
+P 6200 2250
+F 0 "#PWR0103" H 6200 2100 50  0001 C CNN
+F 1 "+5V" H 6215 2423 50  0000 C CNN
+F 2 "" H 6200 2250 50  0001 C CNN
+F 3 "" H 6200 2250 50  0001 C CNN
+	1    6200 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 61E323BB
+P 4500 1350
+F 0 "#PWR0104" H 4500 1200 50  0001 C CNN
+F 1 "+5V" H 4515 1523 50  0000 C CNN
+F 2 "" H 4500 1350 50  0001 C CNN
+F 3 "" H 4500 1350 50  0001 C CNN
+	1    4500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 61E32659
+P 6050 1350
+F 0 "#PWR0105" H 6050 1200 50  0001 C CNN
+F 1 "+5V" H 6065 1523 50  0000 C CNN
+F 2 "" H 6050 1350 50  0001 C CNN
+F 3 "" H 6050 1350 50  0001 C CNN
+	1    6050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 61E3294A
+P 6050 2750
+F 0 "#PWR0106" H 6050 2500 50  0001 C CNN
+F 1 "GND" H 6055 2577 50  0000 C CNN
+F 2 "" H 6050 2750 50  0001 C CNN
+F 3 "" H 6050 2750 50  0001 C CNN
+	1    6050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61E32C1C
+P 5900 2750
+F 0 "#PWR0107" H 5900 2500 50  0001 C CNN
+F 1 "GND" H 5905 2577 50  0000 C CNN
+F 2 "" H 5900 2750 50  0001 C CNN
+F 3 "" H 5900 2750 50  0001 C CNN
+	1    5900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small 1.5k1
+U 1 1 61E34A53
+P 6050 1600
+F 0 "1.5k1" H 6109 1646 50  0000 L CNN
+F 1 "R_Small" H 6109 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 1600 50  0001 C CNN
+F 3 "~" H 6050 1600 50  0001 C CNN
+	1    6050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1350 6050 1500
+Wire Wire Line
+	6050 1700 6050 1950
+Connection ~ 6050 1950
+Wire Wire Line
+	6050 1950 6200 1950
+Wire Wire Line
+	6050 2450 6050 1950
+Wire Wire Line
+	5900 2450 5900 2050
+Connection ~ 5900 2050
+$Comp
+L Switch:SW_Push SW1
+U 1 1 61E3A2FD
+P 5750 1050
+F 0 "SW1" H 5750 1335 50  0000 C CNN
+F 1 "SW_Push" H 5750 1244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 5750 1250 50  0001 C CNN
+F 3 "~" H 5750 1250 50  0001 C CNN
+	1    5750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1850 5550 1450
+$Comp
+L power:+5V #PWR0108
+U 1 1 61E3D00B
+P 5950 1050
+F 0 "#PWR0108" H 5950 900 50  0001 C CNN
+F 1 "+5V" H 5965 1223 50  0000 C CNN
+F 2 "" H 5950 1050 50  0001 C CNN
+F 3 "" H 5950 1050 50  0001 C CNN
+	1    5950 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small 10k1
+U 1 1 61E3DB17
+P 5650 1450
+F 0 "10k1" V 5454 1450 50  0000 C CNN
+F 1 "R_Small" V 5545 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 1450 50  0001 C CNN
+F 3 "~" H 5650 1450 50  0001 C CNN
+	1    5650 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 5550 1450
+Wire Wire Line
+	5550 1450 5550 1050
+$Comp
+L power:GND #PWR0109
+U 1 1 61E3E1F5
+P 5750 1450
+F 0 "#PWR0109" H 5750 1200 50  0001 C CNN
+F 1 "GND" H 5755 1277 50  0000 C CNN
+F 2 "" H 5750 1450 50  0001 C CNN
+F 3 "" H 5750 1450 50  0001 C CNN
+	1    5750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener 3.6V2
+U 1 1 61E3F0B2
+P 6050 2600
+F 0 "3.6V2" V 6004 2680 50  0000 L CNN
+F 1 "D_Zener" V 6095 2680 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6050 2600 50  0001 C CNN
+F 3 "~" H 6050 2600 50  0001 C CNN
+	1    6050 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener 3.6V1
+U 1 1 61E3F5F7
+P 5900 2600
+F 0 "3.6V1" V 5850 2450 50  0000 L CNN
+F 1 "D_Zener" V 5950 2250 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 5900 2600 50  0001 C CNN
+F 3 "~" H 5900 2600 50  0001 C CNN
+	1    5900 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 61E48846
+P 7600 2350
+F 0 "#PWR0110" H 7600 2100 50  0001 C CNN
+F 1 "GND" H 7605 2177 50  0000 C CNN
+F 2 "" H 7600 2350 50  0001 C CNN
+F 3 "" H 7600 2350 50  0001 C CNN
+	1    7600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 61E48E47
+P 7600 1500
+F 0 "#PWR0111" H 7600 1350 50  0001 C CNN
+F 1 "+5V" H 7615 1673 50  0000 C CNN
+F 2 "" H 7600 1500 50  0001 C CNN
+F 3 "" H 7600 1500 50  0001 C CNN
+	1    7600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small 220ohm1
+U 1 1 61E492EA
+P 7600 2250
+F 0 "220ohm1" H 7659 2296 50  0000 L CNN
+F 1 "R_Small" H 7659 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 2250 50  0001 C CNN
+F 3 "~" H 7600 2250 50  0001 C CNN
+	1    7600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61E49FB9
+P 7600 1850
+F 0 "D1" V 7547 1930 50  0000 L CNN
+F 1 "LED" V 7638 1930 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 7600 1850 50  0001 C CNN
+F 3 "~" H 7600 1850 50  0001 C CNN
+	1    7600 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 1700 7600 1500
+Wire Wire Line
+	7600 2000 7600 2150
+Wire Wire Line
+	5100 1850 5550 1850
+Wire Wire Line
+	5100 1950 5700 1950
+Wire Wire Line
+	5100 2050 5700 2050
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 61E5C9A3
+P 2500 1950
+F 0 "J2" H 2550 2267 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 2550 2176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2500 1950 50  0001 C CNN
+F 3 "~" H 2500 1950 50  0001 C CNN
+	1    2500 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 1850 0    50   Input ~ 0
+MISO
+Text GLabel 2800 1850 2    50   Input ~ 0
+VCC
+Text GLabel 2300 1950 0    50   Input ~ 0
+SCK
+Text GLabel 2300 2050 0    50   Input ~ 0
+RESET
+Text GLabel 2800 1950 2    50   Input ~ 0
+MOSI
+Text GLabel 2800 2050 2    50   Input ~ 0
+GND
+Text GLabel 5100 2150 2    50   Input ~ 0
+RESET
+Text GLabel 4500 2550 2    50   Input ~ 0
+GND
+Text GLabel 5100 1650 2    50   Input ~ 0
+MOSI
+Text GLabel 4500 1350 2    50   Input ~ 0
+VCC
+Text GLabel 5100 1750 2    50   Input ~ 0
+MISO
+Text GLabel 5400 1850 1    50   Input ~ 0
+SCK
+$EndSCHEMATC
